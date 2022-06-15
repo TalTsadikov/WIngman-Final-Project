@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Obstacle"))
+        if (other.tag == "Player")
         {
+            Destroy(this.gameObject);
             Debug.Log("Collected");
-            Destroy(collision.gameObject);
         }
     }
 }
