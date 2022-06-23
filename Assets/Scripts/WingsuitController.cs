@@ -5,6 +5,8 @@ using UnityEngine.Audio;
 
 public class WingsuitController : MonoBehaviour
 {
+    public float bustspeed = 20f;
+
     // Get the player Rigidbody component
     public Rigidbody rb;
     // Rotation
@@ -49,7 +51,7 @@ public class WingsuitController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            highSpeed = 20f;
+            highSpeed = bustspeed;
         }
         else
             highSpeed = 13.8f;
