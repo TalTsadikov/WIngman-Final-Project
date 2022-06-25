@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class NavMeshPatrol : MonoBehaviour
 {
-    [SerializeField] private NavMeshAgent navMeshAgent;
+    [SerializeField] private NavMeshAgent agent;
     public Transform[] wayPointTransform;
     int wayPointIndex;
     Vector3 nextTarget;
@@ -19,8 +19,9 @@ public class NavMeshPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, nextTarget) < 3)
+        if (Vector3.Distance(transform.position, nextTarget) < 10)
         {
+            Debug.Log("Changed");
             UpdateWayPoint();
             UpdateDestination();
         }
@@ -29,7 +30,7 @@ public class NavMeshPatrol : MonoBehaviour
     void UpdateDestination()
     {
         nextTarget = wayPointTransform[wayPointIndex].position;
-        navMeshAgent.SetDestination(nextTarget);
+        agent.SetDestination(nextTarget);
     }
 
     void UpdateWayPoint()
