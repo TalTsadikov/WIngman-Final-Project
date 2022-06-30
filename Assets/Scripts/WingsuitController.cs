@@ -3,20 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-/*
-* How to use:
-* 1- Attach this script to the player
-* 2- Make sure that your player has a Rigidbody component
-* 3- Create an AudioMixer that has the sound effects, if you don't want to, just comment line: 60 and 103
-* 4- You don't have to modify the public variables, but you can adjust them. (Optional)
-*/
-
 public class WingsuitController : MonoBehaviour
 {
     // Get the player Rigidbody component
     public Rigidbody rb;
     // Rotation
     private Vector3 rot;
+    //Mouse Sensetivity
+    public float mouseSensetivity = 100f;
 
     // Min speed, when the player is on 0 deg or whatever minAngle you have
     public float lowSpeed = 12.5f;
@@ -24,7 +18,7 @@ public class WingsuitController : MonoBehaviour
     public float highSpeed = 13.8f;
 
     // Max drag, if the player is on 0 deg or minAngle
-    public float maxDrag = 5;
+    public float maxDrag = 4;
     // Min drag
     public float minDrag = 2;
 
@@ -53,15 +47,22 @@ public class WingsuitController : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (Input.GetKey(KeyCode.W))
+        {
+            highSpeed = 20f;
+        }
+        else
+            highSpeed = 13.8f;
+
         // Rotation
         // Y
-        rot.y += 20 * Input.GetAxis("Horizontal") * Time.deltaTime;
+        rot.y += 20 * Input.GetAxis("Mouse X") * Time.deltaTime * mouseSensetivity;
         // Z
-        rot.z = -5 * Input.GetAxis("Horizontal");
+        rot.z = -5 * Input.GetAxis("Mouse X");
         // Limiting the z-axis
         rot.z = Mathf.Clamp(rot.z, -5, 5);
         // X
-        rot.x += 20 * Input.GetAxis("Vertical") * Time.deltaTime;
+        rot.x += 20 * Input.GetAxis("Mouse Y") * Time.deltaTime * -mouseSensetivity;
         // Limiting x-axis
         rot.x = Mathf.Clamp(rot.x, minAngle, maxAngle);
         // Update rotation
