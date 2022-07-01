@@ -324,28 +324,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &601730772 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2825138318715813614, guid: 4753ed99370d78d4b852ed9cf87f1871, type: 3}
-  m_PrefabInstance: {fileID: 1518654551089190810}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &601730774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 601730772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 416ac83c7a8efd84d97faa6293b9a13b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1906988560}
-  wayPointTransform:
-  - {fileID: 307122848}
-  - {fileID: 1314164160}
-  - {fileID: 719208434}
 --- !u!1 &691326526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,6 +1040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1906988561}
   - component: {fileID: 1906988560}
+  - component: {fileID: 1906988559}
   m_Layer: 0
   m_Name: NavMeshAgent
   m_TagString: Untagged
@@ -1069,6 +1048,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1906988559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906988558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 416ac83c7a8efd84d97faa6293b9a13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 1906988560}
+  wayPointTransform:
+  - {fileID: 307122848}
+  - {fileID: 1314164160}
+  - {fileID: 719208434}
 --- !u!195 &1906988560
 NavMeshAgent:
   m_ObjectHideFlags: 0
