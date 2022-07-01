@@ -19,7 +19,7 @@ public class NavMeshPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, nextTarget) < 10)
+        if (Vector3.Distance(transform.position, nextTarget) < 20)
         {
             Debug.Log("Changed");
             UpdateWayPoint();
