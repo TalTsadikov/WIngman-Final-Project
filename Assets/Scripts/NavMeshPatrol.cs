@@ -35,11 +35,6 @@ public class NavMeshPatrol : MonoBehaviour
 
     void UpdateWayPoint()
     {
-        wayPointIndex++;
-
-        if (wayPointIndex == wayPointTransform.Length)
-        {
-            wayPointIndex = 0;
-        }
+       wayPointIndex = Random.Range(0, wayPointTransform.Length);
     }
 }
