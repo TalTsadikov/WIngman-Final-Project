@@ -41,6 +41,9 @@ public class WingsuitController : MonoBehaviour
     // Audio mixer, to control the sound FX pitch
     public AudioMixer am;
 
+    public bool powerUpActive = false;
+    public float powerUpForce = 50f;
+
     private void Start()
     {
         // Setting rotation variable to the current angles
@@ -88,5 +91,26 @@ public class WingsuitController : MonoBehaviour
         rb.drag = mod_drag;
         // Change pitch value based on the player's angle and percentage
         am.SetFloat("Pitch", 1 + percentage);
+
+        if (powerUpActive)
+        {
+            rb.AddForce(transform.up * powerUpForce);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "PowerUp")
+        {
+            StartCoroutine(PowerUpCooldown());
+            Debug.Log("Power up");
+        }
+    }
+
+    public IEnumerator PowerUpCooldown()
+    {
+        powerUpActive = true;
+        yield return new WaitForSeconds(5f);
+        powerUpActive = false;
     }
 }
