@@ -10,7 +10,7 @@ public class WingsuitController : MonoBehaviour
     // Get the player Rigidbody component
     public Rigidbody rb;
     // Rotation
-    private Vector3 rot;
+    public Vector3 rot;
     //Mouse Sensetivity
     public float mouseSensetivity = 100f;
 
