@@ -7,28 +7,17 @@ public class AnimationController : MonoBehaviour
 {
     [SerializeField]
     Animator anim;
+    [SerializeField]
+    WingsuitController wingsuitController;
+    [SerializeField]
+    float currentAngle;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public const string PERCENTAGE = "Percentage";
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-            anim.SetBool("W Pressed", true);
-
-        if(Input.GetKeyUp(KeyCode.W))
-            anim.SetBool("W Pressed", false);
-
-        if (Input.GetKeyDown(KeyCode.S))
-            anim.SetBool("S Pressed", true);
-
-        if (Input.GetKeyUp(KeyCode.S))
-            anim.SetBool("S Pressed", false);
-
-
+        anim.SetFloat(PERCENTAGE, wingsuitController.percentage);
+        currentAngle = wingsuitController.percentage;
     }
 }
