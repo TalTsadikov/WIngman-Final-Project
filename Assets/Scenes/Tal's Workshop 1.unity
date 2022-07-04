@@ -2511,6 +2511,10 @@ PrefabInstance:
       propertyPath: powerUpForce
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8989599934507984895, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
+      propertyPath: mouseSensetivity
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
 --- !u!1 &1906988558
