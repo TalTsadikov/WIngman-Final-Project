@@ -9,7 +9,7 @@ public class WingsuitController : MonoBehaviour
     [SerializeField] RetryMenu retryMenuScript;
 
 
-    public float bustspeed = 20f;
+    public float boostSpeed = 20f;
 
     // Get the player Rigidbody component
     public Rigidbody rb;
@@ -58,12 +58,12 @@ public class WingsuitController : MonoBehaviour
 
     private void LateUpdate()
     {
-       //if (Input.GetKey(KeyCode.W))
-       //{
-       //    highSpeed = bustspeed;
-       //}
-       //else
-       //    highSpeed = 13.8f;
+        if (Input.GetKey(KeyCode.Space))
+        {
+            highSpeed = boostSpeed;
+        }
+        else
+            highSpeed = 13.8f;
 
         // Rotation
         // Y
