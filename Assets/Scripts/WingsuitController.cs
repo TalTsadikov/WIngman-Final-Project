@@ -58,12 +58,12 @@ public class WingsuitController : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            highSpeed = bustspeed;
-        }
-        else
-            highSpeed = 13.8f;
+       //if (Input.GetKey(KeyCode.W))
+       //{
+       //    highSpeed = bustspeed;
+       //}
+       //else
+       //    highSpeed = 13.8f;
 
         // Rotation
         // Y
