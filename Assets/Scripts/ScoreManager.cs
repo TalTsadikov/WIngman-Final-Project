@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class TotalScore : MonoBehaviour
+public class ScoreManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public static int totalScore = 0;
@@ -13,10 +13,10 @@ public class TotalScore : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        scoreText.text = "Score: " + levelScore.ToString();
+        scoreText.text = "X" + levelScore.ToString();
     }
     private void Update()
     {
-        scoreText.text = "Score: " + levelScore.ToString();
+        scoreText.text = "X" + levelScore.ToString();
     }
 }

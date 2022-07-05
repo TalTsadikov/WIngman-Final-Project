@@ -11,7 +11,7 @@ public class Obstacle : MonoBehaviour
         {
             Destroy(this.gameObject);
             Debug.Log("Collected");
-            TotalScore.levelScore++;
+            ScoreManager.levelScore++;
         }
     }
 }
