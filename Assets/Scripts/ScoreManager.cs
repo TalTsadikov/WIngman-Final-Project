@@ -15,6 +15,7 @@ public class ScoreManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
         scoreText.text = "X" + levelScore.ToString();
     }
+
     private void Update()
     {
         scoreText.text = "X" + levelScore.ToString();
