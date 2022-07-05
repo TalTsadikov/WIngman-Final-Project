@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MatI_Ride_FengHuang_01b
-  m_Shader: {fileID: 4800000, guid: 7258d825fa9aac6439f21eb173b880c6, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: a08f3a1c845d57c4293a42c3202574a1, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -39,7 +39,20 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _AlphaCutoff: 0
     - _BumpScale: 1
     - _Metallic: 0
     - _Roughness: 1
