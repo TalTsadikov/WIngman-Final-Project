@@ -10,7 +10,7 @@ public class TrailController : MonoBehaviour
 
     void Update()
     {
-        if (wingsuitController.percentage > 0.7f)
+        if (wingsuitController.percentage > 0.5f)
         {
             EnableTrail();
         }

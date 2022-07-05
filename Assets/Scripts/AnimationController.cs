@@ -5,19 +5,22 @@ using UnityEngine.Animations;
 
 public class AnimationController : MonoBehaviour
 {
-    [SerializeField]
-    Animator anim;
-    [SerializeField]
-    WingsuitController wingsuitController;
-    [SerializeField]
-    float currentAngle;
+    public Animator anim;
+
+    [SerializeField] WingsuitController wingsuitController;
 
     public const string PERCENTAGE = "Percentage";
+    public const string PLAYER_CRASHED = "Player Crashed";
 
     // Update is called once per frame
     void Update()
     {
         anim.SetFloat(PERCENTAGE, wingsuitController.percentage);
-        currentAngle = wingsuitController.percentage;
+    }
+
+    public void OnCollisionEnter(Collision coll)
+    {
+        //anim.SetBool("Player Crashed", true);
+       // Debug.Log("hit wall");
     }
 }
