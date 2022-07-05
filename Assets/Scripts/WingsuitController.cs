@@ -5,8 +5,6 @@ using UnityEngine.Audio;
 
 public class WingsuitController : MonoBehaviour
 {
-    public bool canMove = true;
-
     [SerializeField] Canvas retryMenu;
     [SerializeField] RetryMenu retryMenuScript;
 
@@ -67,10 +65,6 @@ public class WingsuitController : MonoBehaviour
         else
             highSpeed = 13.8f;
 
-
-        if(canMove)
-        {
-
         // Rotation
         // Y
         rot.y += 20 * Input.GetAxis("Mouse X") * Time.deltaTime * mouseSensetivity;
@@ -83,8 +77,7 @@ public class WingsuitController : MonoBehaviour
         // Limiting x-axis
         rot.x = Mathf.Clamp(rot.x, minAngle, maxAngle);
 
-        }
-
+        
         // Update rotation
         transform.rotation = Quaternion.Euler(rot);
 
@@ -132,17 +125,13 @@ public class WingsuitController : MonoBehaviour
     private void OnCollisionEnter(Collision coll)
     {
         animController.anim.SetBool("Player Crashed", true);
-        //canMove = false;
-
         Invoke("SetRetryMenuActive", 1f);
-        
     }
 
     public void SetRetryMenuActive()
     {
         Time.timeScale = 0f;
         retryMenu.gameObject.SetActive(true);
-        //canMove = true;
     }
 
 }

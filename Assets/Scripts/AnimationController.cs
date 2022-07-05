@@ -18,9 +18,4 @@ public class AnimationController : MonoBehaviour
         anim.SetFloat(PERCENTAGE, wingsuitController.percentage);
     }
 
-    public void OnCollisionEnter(Collision coll)
-    {
-        //anim.SetBool("Player Crashed", true);
-       // Debug.Log("hit wall");
-    }
 }

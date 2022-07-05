@@ -7,6 +7,7 @@ public class RetryMenu : MonoBehaviour
 {
     int currentSceneIndex;
     [SerializeField] Canvas retryMenu;
+    public const string MAIN_MENU = "Main Menu";
 
 
     // Start is called before the first frame update
@@ -24,7 +25,7 @@ public class RetryMenu : MonoBehaviour
 
     public void MainMenuButton()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene(MAIN_MENU);
         Time.timeScale = 1;
 
     }
