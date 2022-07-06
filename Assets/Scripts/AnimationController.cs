@@ -10,7 +10,6 @@ public class AnimationController : MonoBehaviour
     [SerializeField] WingsuitController wingsuitController;
 
     public const string PERCENTAGE = "Percentage";
-    public const string PLAYER_CRASHED = "Player Crashed";
 
     // Update is called once per frame
     void Update()
