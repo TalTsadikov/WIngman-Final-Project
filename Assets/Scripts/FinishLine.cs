@@ -6,12 +6,13 @@ public class FinishLine : MonoBehaviour
 {
     [SerializeField] CheckPointManager cpManager;
     [SerializeField] WingsuitController wsCon;
+    [SerializeField] GameObject winMenu;
 
     private void OnTriggerEnter(Collider other)
     {
         if (cpManager.checkpointTriggered == 3)
         {
-            Debug.Log("Won");
+            winMenu.SetActive(true);
         }
         else
         {

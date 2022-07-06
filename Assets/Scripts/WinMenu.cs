@@ -13,12 +13,6 @@ public class WinMenu : MonoBehaviour
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void NextLevelButton()
     {
         SceneManager.LoadScene(currentSceneIndex++);
