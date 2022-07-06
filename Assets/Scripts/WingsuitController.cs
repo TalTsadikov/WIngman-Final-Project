@@ -102,7 +102,7 @@ public class WingsuitController : MonoBehaviour
 
         if (powerUpActive)
         {
-            rb.AddForce(transform.up * powerUpForce);
+            rb.AddForce(transform.up * powerUpForce * Time.deltaTime);
         }
     }
 
