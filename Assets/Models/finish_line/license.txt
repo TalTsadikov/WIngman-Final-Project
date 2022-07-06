@@ -1,0 +1,11 @@
+Model Information:
+* title:	TDV Finish Line 2021 V1
+* source:	https://sketchfab.com/3d-models/tdv-finish-line-2021-v1-a9f596166a3946038e5afc5d37756119
+* author:	stevenjcasey (https://sketchfab.com/stevenjcasey)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "TDV Finish Line 2021 V1" (https://sketchfab.com/3d-models/tdv-finish-line-2021-v1-a9f596166a3946038e5afc5d37756119) by stevenjcasey (https://sketchfab.com/stevenjcasey) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
