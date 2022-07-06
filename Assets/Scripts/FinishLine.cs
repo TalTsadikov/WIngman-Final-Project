@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class FinishLine : MonoBehaviour
 {
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] Checkpoint checkpoint;
+    [SerializeField] WingsuitController wsCon;
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("finish line crossed");
+        if (checkpoint.checkpointTriggered == 3)
+        {
+            Debug.Log("Won");
+        }
+        else
+        {
+            wsCon.SetRetryMenuActive();
+        }
     }
 }

@@ -141,6 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac2a89ceaa7cf245b2aa51ddc0839ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkpointTriggered: 0
 --- !u!1001 &2247314955127188842
 PrefabInstance:
   m_ObjectHideFlags: 0

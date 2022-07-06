@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int checkpointTriggered;
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("checkpoint registered");
+        checkpointTriggered++;
+        Debug.Log("checkpoint");
     }
 }
