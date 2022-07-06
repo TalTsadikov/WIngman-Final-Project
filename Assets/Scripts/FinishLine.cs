@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class FinishLine : MonoBehaviour
 {
-    [SerializeField] Checkpoint checkpoint;
+    [SerializeField] CheckPointManager cpManager;
     [SerializeField] WingsuitController wsCon;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (checkpoint.checkpointTriggered == 3)
+        if (cpManager.checkpointTriggered == 3)
         {
             Debug.Log("Won");
         }

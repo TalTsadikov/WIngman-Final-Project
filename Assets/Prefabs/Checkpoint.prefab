@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 4617173731369939085}
   - component: {fileID: 4222059098922356470}
   - component: {fileID: 5821416700652770473}
-  - component: {fileID: 8597783391419411495}
+  - component: {fileID: 9010210528424134428}
   m_Layer: 0
   m_Name: checkpoint collider
   m_TagString: Untagged
@@ -129,7 +129,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8597783391419411495
+--- !u!114 &9010210528424134428
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

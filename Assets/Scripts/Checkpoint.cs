@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    public int checkpointTriggered;
+    [SerializeField] CheckPointManager cpManager;
 
     private void OnTriggerEnter(Collider other)
     {
-        checkpointTriggered++;
-        Debug.Log("checkpoint");
+        if (other.tag == "Player")
+        {
+            cpManager.checkpointTriggered++;
+            Debug.Log("checkpoint");
+        }
     }
 }
