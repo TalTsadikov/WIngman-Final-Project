@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: a15c79d08cd99284e953ba3fce885987
   - enabled: 1
-    path: Assets/Scenes/Tal's Workshop.unity
-    guid: 9dfb26f48eb489047adfd018ec31721e
+    path: Assets/Scenes/daniels example.unity
+    guid: f09760d0e43557d43b4626059c61300d
   m_configObjects: {}
