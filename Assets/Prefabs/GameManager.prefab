@@ -43,4 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2790a058b1e9b894396e4f88ae0aae5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  coinManager: {fileID: 0}
+  levelScore: 0

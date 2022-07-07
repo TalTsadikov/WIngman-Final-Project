@@ -6,14 +6,18 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] CheckPointManager cpManager;
-    public TextMeshProUGUI scoreText;
+    [SerializeField] ScoreManager scoreManager;
+    [SerializeField] CoinManager coinManager;
+    public TextMeshProUGUI coinsCollectedText;
+    public TextMeshProUGUI coinAmountText;
     public TextMeshProUGUI checkpointAmountText;
     public TextMeshProUGUI checkpointTriggeredText;
 
     // Start is called before the first frame update
     void Start()
     {
-        scoreText.text = "X" + ScoreManager.levelScore.ToString();
+        coinAmountText.text = "/" + coinManager.coinsAmount.ToString();
+        coinsCollectedText.text = scoreManager.levelScore.ToString();
         checkpointTriggeredText.text = cpManager.checkpointTriggered.ToString();
         checkpointAmountText.text = "/" + cpManager.checkpointAmount.ToString();
     }
@@ -21,7 +25,8 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "X" + ScoreManager.levelScore.ToString(); 
+        coinAmountText.text = "/" + coinManager.coinsAmount.ToString();
+        coinsCollectedText.text = scoreManager.levelScore.ToString();
         checkpointTriggeredText.text = cpManager.checkpointTriggered.ToString();
         checkpointAmountText.text = "/" + cpManager.checkpointAmount.ToString();
     }

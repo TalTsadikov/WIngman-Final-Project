@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] CoinManager coinManager;
     public static int totalScore = 0;
-    public static int levelScore = 0;
+    public int levelScore = 0;
 
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+        levelScore = coinManager.coinCollected;
+    }
+
+    private void Update()
+    {
+        levelScore = coinManager.coinCollected;
     }
 }

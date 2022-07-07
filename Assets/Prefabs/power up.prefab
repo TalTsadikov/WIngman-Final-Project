@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 5994250973126971958}
   - component: {fileID: 5994250973126971945}
   - component: {fileID: 5994250973126971944}
-  - component: {fileID: 5994250973126971947}
+  - component: {fileID: 2076318028515401665}
   m_Layer: 0
   m_Name: power up
   m_TagString: PowerUp
@@ -320,7 +320,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5994250973126971947
+--- !u!114 &2076318028515401665
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -329,7 +329,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6991956695095256114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4632da6fa727d1e4fa1d629ae5a7c0c6, type: 3}
+  m_Script: {fileID: 11500000, guid: 16e9460d1a4b4364fa1f0b3ae1c3b17e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8488506519870181356
