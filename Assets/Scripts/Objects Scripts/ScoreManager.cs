@@ -70,7 +70,7 @@ public class ScoreManager : MonoBehaviour
         switch (buildIndex)
         {
             case 1:
-                 level = "level1HighScore";
+                level = "level1HighScore";
                 break;
             case 2:
                 level = "level2HighScore";

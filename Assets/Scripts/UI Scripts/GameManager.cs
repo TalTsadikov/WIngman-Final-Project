@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     public void LoadData(GameData data)
     {
-        level1Score = data.level1HighScore;
+        level1HighScore = data.level1HighScore;
         level2HighScore = data.level2HighScore;
         level3HighScore = data.level3HighScore;
         level4HighScore = data.level4HighScore;
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     public void SaveData(GameData data)
     {
-        data.level1HighScore = level1Score;
+        data.level1HighScore = level1HighScore;
         data.level2HighScore = level2HighScore;
         data.level3HighScore = level3HighScore;
         data.level4HighScore = level4HighScore;
@@ -53,6 +53,27 @@ public class GameManager : MonoBehaviour, IDataPersistence
         {
             scoreManager.ScoreUpdater(coinManager.coinsCollected, scoreManager.LevelChecker(buildIndex));
             Debug.Log("Save");
+            if (buildIndex == 1)
+            {
+                level1HighScore = level1Score;
+                Debug.Log("Save1");
+            }
+            else if(buildIndex == 2)
+            {
+                level2HighScore = level2Score;
+            }
+            else if (buildIndex == 3)
+            {
+                level3HighScore = level3Score;
+            }
+            else if (buildIndex == 4)
+            {
+                level4HighScore = level4Score;
+            }
+            else if (buildIndex == 5)
+            {
+                level5HighScore = level5Score;
+            }
             finishLine.finishedLevel = false;
         }
     }
