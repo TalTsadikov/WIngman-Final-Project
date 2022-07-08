@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class UIManager : MonoBehaviour ,IDataPersistence
+public class UIManager : MonoBehaviour
 {
     [SerializeField] CheckPointManager cpManager;
     [SerializeField] ScoreManager scoreManager;
@@ -17,31 +17,16 @@ public class UIManager : MonoBehaviour ,IDataPersistence
     void Start()
     {
         coinAmountText.text = "/" + coinManager.coinsAmount.ToString();
-        coinsCollectedText.text = coinManager.coinCollected.ToString();
+        coinsCollectedText.text = coinManager.coinsCollected.ToString();
         checkpointTriggeredText.text = cpManager.checkpointTriggered.ToString();
         checkpointAmountText.text = "/" + cpManager.checkpointAmount.ToString();
     }
 
-    public void LoadData(GameData data)
-    {
-        foreach (KeyValuePair<string, bool> pair in data.coinsCollected)
-        {
-            if (pair.Value)
-            {
-                coinManager.coinCollected++;
-            }
-        }
-    }
-
-    public void SaveData(GameData data)
-    {
-
-    }
     // Update is called once per frame
     void Update()
     {
         coinAmountText.text = "/" + coinManager.coinsAmount.ToString();
-        coinsCollectedText.text = coinManager.coinCollected.ToString();
+        coinsCollectedText.text = coinManager.coinsCollected.ToString();
         checkpointTriggeredText.text = cpManager.checkpointTriggered.ToString();
         checkpointAmountText.text = "/" + cpManager.checkpointAmount.ToString();
     }

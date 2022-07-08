@@ -2,35 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coin : MonoBehaviour, IDataPersistence
+public class Coin : MonoBehaviour//, IDataPersistence
 {
     [SerializeField] CoinManager coinManager;
     private bool collected = false;
 
-    [SerializeField] private string id;
-    [ContextMenu("Generate guid for id")]
-    private void GenerateGuid()
-    {
-        id = System.Guid.NewGuid().ToString();
-    }
+   //[SerializeField] private string id;
+   //[ContextMenu("Generate guid for id")]
+   //private void GenerateGuid()
+   //{
+   //    id = System.Guid.NewGuid().ToString();
+   //}
 
-    public void LoadData(GameData data)
-    {
-        data.coinsCollected.TryGetValue(id, out collected);
-        if (collected)
-        {
-            Destroy(this.gameObject);
-        }
-    }
-
-    public void SaveData(GameData data)
-    {
-        if (data.coinsCollected.ContainsKey(id))
-        {
-            data.coinsCollected.Remove(id);
-        }
-        data.coinsCollected.Add(id, collected);
-    }
+  // public void LoadData(GameData data)
+  // {
+  //     coinManager.coinsCollected = data.coinsCollected;
+  // }
+  //
+  // public void SaveData(GameData data)
+  // {
+  //     data.coinsCollected = coinManager.coinsCollected;
+  // }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -44,7 +36,7 @@ public class Coin : MonoBehaviour, IDataPersistence
     private void CoinCollected()
     {
         collected = true;
-        coinManager.coinCollected++;
+        coinManager.coinsCollected++;
         Destroy(this.gameObject);
     }
 }

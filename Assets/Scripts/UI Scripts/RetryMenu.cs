@@ -27,7 +27,6 @@ public class RetryMenu : MonoBehaviour
     {
         SceneManager.LoadScene(MAIN_MENU);
         Time.timeScale = 1;
-
     }
 
     public void QuitButton()
