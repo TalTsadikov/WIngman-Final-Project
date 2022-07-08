@@ -12,7 +12,7 @@ public class FinishLine : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (cpManager.checkpointTriggered == 3)
+        if (cpManager.checkpointTriggered == cpManager.checkpointAmount)
         {
             finishedLevel = true;
             SetWinMenuActive();
