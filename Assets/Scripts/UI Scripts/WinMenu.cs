@@ -16,15 +16,21 @@ public class WinMenu : MonoBehaviour
     public void NextLevelButton()
     {
         SceneManager.LoadScene(currentSceneIndex++);
+        Time.timeScale = 1;
+        DataPersistenceManager.instance.SaveGame();
     }
 
     public void MainMenuButton()
     {
         SceneManager.LoadScene(MAIN_MENU);
+        Time.timeScale = 1;
+        DataPersistenceManager.instance.SaveGame();
     }
 
     public void ReplayLevelButton()
     {
         SceneManager.LoadScene(currentSceneIndex);
+        Time.timeScale = 1;
+        DataPersistenceManager.instance.SaveGame();
     }
 }

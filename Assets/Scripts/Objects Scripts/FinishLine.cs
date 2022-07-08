@@ -12,11 +12,17 @@ public class FinishLine : MonoBehaviour
     {
         if (cpManager.checkpointTriggered == 3)
         {
-            winMenu.SetActive(true);
+            SetWinMenuActive();
         }
         else
         {
             wsCon.SetRetryMenuActive();
         }
+    }
+
+    public void SetWinMenuActive()
+    {
+        Time.timeScale = 0f;
+        winMenu.SetActive(true);
     }
 }
