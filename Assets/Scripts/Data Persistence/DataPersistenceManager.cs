@@ -52,7 +52,7 @@ public class DataPersistenceManager : MonoBehaviour
 
         if (this.gameData == null)
         {
-            return;
+            NewGame();
         }
 
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
