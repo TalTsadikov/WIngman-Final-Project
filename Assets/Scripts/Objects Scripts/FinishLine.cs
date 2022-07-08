@@ -8,15 +8,25 @@ public class FinishLine : MonoBehaviour
     [SerializeField] WingsuitController wsCon;
     [SerializeField] GameObject winMenu;
 
+    public bool finishedLevel = false;
+
     private void OnTriggerEnter(Collider other)
     {
         if (cpManager.checkpointTriggered == 3)
         {
-            winMenu.SetActive(true);
+            finishedLevel = true;
+            SetWinMenuActive();
         }
         else
         {
+            finishedLevel = false;
             wsCon.SetRetryMenuActive();
         }
+    }
+
+    public void SetWinMenuActive()
+    {
+        Time.timeScale = 0f;
+        winMenu.SetActive(true);
     }
 }

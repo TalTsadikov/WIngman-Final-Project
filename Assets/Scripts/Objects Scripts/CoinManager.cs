@@ -6,7 +6,7 @@ public class CoinManager : MonoBehaviour
 {
     public Transform[] coins;
     public int coinsAmount;
-    public int coinCollected;
+    public int coinsCollected;
 
     private void Start()
     {
