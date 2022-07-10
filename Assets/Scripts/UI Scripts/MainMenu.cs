@@ -7,14 +7,6 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] GameManager gameManager;
 
-   //private void Start()
-   //{
-   //    if (!DataPersistenceManager.instance.HasGameData())
-   //    {
-   //        //disable future continue button
-   //    }
-   //}
-
     public void LevelSelectButton()
     {
         if(gameManager.totalCoins == 0)
