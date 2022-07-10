@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2986548886771233610}
   - component: {fileID: 2986548886771233613}
-  - component: {fileID: 944807818}
+  - component: {fileID: 58658186}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinManager: {fileID: 0}
-  gameManager: {fileID: 944807818}
---- !u!114 &944807818
+  gameManager: {fileID: 58658186}
+--- !u!114 &58658186
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
