@@ -13,11 +13,14 @@ public class MainMenu : MonoBehaviour
    //    }
    //}
 
-    public void LoadFirstScene()
+    public void LevelSelectButton()
     {
-        DataPersistenceManager.instance.NewGame();
+        //if(currentCoins != 0)
+        //{
+        //    DataPersistenceManager.instance.NewGame();
+        //}
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(3);
     }
 
     public void QuitGame()

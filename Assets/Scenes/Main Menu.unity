@@ -549,7 +549,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -176.24341, y: 522}
+  m_AnchoredPosition: {x: -138, y: 522}
   m_SizeDelta: {x: 196.2216, y: 40.953003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &531185993
@@ -976,7 +976,7 @@ GameObject:
   - component: {fileID: 971282502}
   - component: {fileID: 971282501}
   m_Layer: 5
-  m_Name: Play Button
+  m_Name: Level Select Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1000,7 +1000,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -140.24341, y: 166.69232}
-  m_SizeDelta: {x: 67.2186, y: 28.3207}
+  m_SizeDelta: {x: 139.94, y: 28.3207}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971282501
 MonoBehaviour:
@@ -1048,7 +1048,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 277518144}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: LoadFirstScene
+        m_MethodName: LevelSelectButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1153,7 +1153,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAY
+  m_text: LEVEL SELECT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3d475050aae3de34cadbb869743f253c, type: 2}
   m_sharedMaterial: {fileID: -288361121043163679, guid: 3d475050aae3de34cadbb869743f253c, type: 2}
