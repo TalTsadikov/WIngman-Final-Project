@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] GameManager gameManager;
+
    //private void Start()
    //{
    //    if (!DataPersistenceManager.instance.HasGameData())
@@ -15,10 +17,10 @@ public class MainMenu : MonoBehaviour
 
     public void LevelSelectButton()
     {
-        //if(currentCoins != 0)
-        //{
-        //    DataPersistenceManager.instance.NewGame();
-        //}
+        if(gameManager.totalCoins == 0)
+        {
+            DataPersistenceManager.instance.NewGame();
+        }
 
         SceneManager.LoadScene(3);
     }
