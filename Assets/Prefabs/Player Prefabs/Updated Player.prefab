@@ -181,7 +181,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651271617}
-  m_LocalRotation: {x: 0.24075381, y: -0.0000000083501375, z: 0.000000002071251, w: 0.97058624}
+  m_LocalRotation: {x: 0.24075551, y: -0.000002577901, z: 0.0000006482005, w: 0.9705859}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5231,7 +5231,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150769143}
-  m_LocalRotation: {x: 0.24075381, y: -0.000000008350138, z: 0.0000000020712512, w: 0.97058624}
+  m_LocalRotation: {x: 0.24075551, y: -0.000002577901, z: 0.0000006482005, w: 0.9705859}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5432,7 +5432,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236625235}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: -4}
+  m_LocalPosition: {x: 0.000021576881, y: 3, z: -3.9999669}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1150769145}
@@ -5566,7 +5566,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736752306}
-  m_LocalRotation: {x: 0.24075381, y: -0.0000000083501375, z: 0.000000002071251, w: 0.97058624}
+  m_LocalRotation: {x: 0.24075551, y: -0.000002577901, z: 0.0000006482005, w: 0.9705859}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5627,6 +5627,7 @@ GameObject:
   - component: {fileID: 8989599934507984889}
   - component: {fileID: 8989599934507984888}
   - component: {fileID: 8989599934507984895}
+  - component: {fileID: 362325190}
   m_Layer: 0
   m_Name: Updated Player
   m_TagString: Untagged
@@ -5681,12 +5682,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   retryMenu: {fileID: 0}
   retryMenuScript: {fileID: 0}
-  bustspeed: 20
+  boostSpeed: 20
   rb: {fileID: 8989599934507984888}
   rot: {x: 0, y: 0, z: 0}
-  mouseSensetivity: 5
-  lowSpeed: 12.5
-  highSpeed: 13.8
+  mouseSensetivity: 20
+  lowSpeed: 20
+  highSpeed: 40
   maxDrag: 4
   minDrag: 2
   minAngle: 0
@@ -5694,8 +5695,27 @@ MonoBehaviour:
   percentage: 0
   am: {fileID: 24100000, guid: 23ec5dd1959daa8418695ef24aee2832, type: 2}
   powerUpActive: 0
-  powerUpForce: 25
+  powerUpForce: 7000
   animController: {fileID: 8989599934056025515}
+--- !u!95 &362325190
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8989599934507984894}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &8989599932685029239
 PrefabInstance:
   m_ObjectHideFlags: 0

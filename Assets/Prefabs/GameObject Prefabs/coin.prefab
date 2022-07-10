@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 4160604928060061808}
   - component: {fileID: 4160604928060061809}
   - component: {fileID: 4160604928060061810}
-  - component: {fileID: 4160604928060061823}
+  - component: {fileID: 147615020}
   m_Layer: 0
   m_Name: coin
   m_TagString: Untagged
@@ -191,7 +191,7 @@ Transform:
   m_GameObject: {fileID: 836192004847097874}
   m_LocalRotation: {x: -0.6691241, y: 0, z: 0, w: 0.7431507}
   m_LocalPosition: {x: 671.4, y: 256.1, z: 350.3}
-  m_LocalScale: {x: 0.1, y: 0.099999994, z: 0.099999994}
+  m_LocalScale: {x: 0.1, y: 0.09999999, z: 0.09999999}
   m_Children:
   - {fileID: 9222003357743388975}
   m_Father: {fileID: 0}
@@ -245,7 +245,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4160604928060061823
+--- !u!114 &147615020
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

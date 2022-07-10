@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
             }
             else if(buildIndex == 2)
             {
+                Debug.Log("Save2");
                 level2HighScore = level2Score;
             }
             else if (buildIndex == 3)
