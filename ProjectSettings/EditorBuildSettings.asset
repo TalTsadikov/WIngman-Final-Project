@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: a15c79d08cd99284e953ba3fce885987
   - enabled: 1
-    path: Assets/Scenes/daniels example.unity
+    path: Assets/Scenes/Level 1.unity
     guid: f09760d0e43557d43b4626059c61300d
   - enabled: 1
-    path: Assets/Scenes/daniels example2.unity
+    path: Assets/Scenes/Level 2.unity
     guid: 172f1134fada8ea4cbe8f46af8812f9e
   - enabled: 1
     path: Assets/Scenes/Level Select Menu.unity
