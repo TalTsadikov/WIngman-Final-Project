@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
-    public int coinsCollected;
+    public int totalCoins;
     public int level1HighScore;
     public int level2HighScore;
     public int level3HighScore;
@@ -14,7 +14,7 @@ public class GameData
 
     public GameData()
     {
-        coinsCollected = new int();
+        totalCoins = new int();
         level1HighScore = new int();
         level2HighScore = new int();
         level3HighScore = new int();

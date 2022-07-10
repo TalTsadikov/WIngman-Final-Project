@@ -19,8 +19,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public int level3HighScore;
     public int level4HighScore;
     public int level5HighScore;
+    public int totalCoins;
     public int buildIndex;
-    public int levelHighScore;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         level3HighScore = data.level3HighScore;
         level4HighScore = data.level4HighScore;
         level5HighScore = data.level5HighScore;
+        totalCoins = data.totalCoins;
     }
 
     public void SaveData(GameData data)
@@ -44,6 +45,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         data.level3HighScore = level3HighScore;
         data.level4HighScore = level4HighScore;
         data.level5HighScore = level5HighScore;
+        data.totalCoins = totalCoins;
     }
 
     // Update is called once per frame
@@ -75,7 +77,15 @@ public class GameManager : MonoBehaviour, IDataPersistence
             {
                 level5HighScore = level5Score;
             }
+            
+            SumUpTotalCoins();
+
             finishLine.finishedLevel = false;
         }
+    }
+
+    public void SumUpTotalCoins()
+    {
+        totalCoins = level1HighScore + level2HighScore + level3HighScore + level4HighScore + level5HighScore;
     }
 }

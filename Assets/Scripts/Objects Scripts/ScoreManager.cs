@@ -7,19 +7,7 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] CoinManager coinManager;
     [SerializeField] GameManager gameManager;
     public static int totalScore = 0;
-   
     private string level;
-
-    private void Start()
-    {
-        //DontDestroyOnLoad(this.gameObject);
-        //levelScore = coinManager.coinsCollected;
-    }
-
-    private void Update()
-    {
-       // levelScore = coinManager.coinsCollected;
-    }
 
     public void ScoreUpdater(int coinsCollected, string levelNumHighScore)
     {

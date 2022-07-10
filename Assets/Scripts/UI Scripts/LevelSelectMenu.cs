@@ -7,12 +7,13 @@ using TMPro;
 
 public class LevelSelectMenu : MonoBehaviour
 {
+    [SerializeField] GameManager gameManager;
     public const string MAIN_MENU = "Main Menu";
     [SerializeField] TextMeshProUGUI coinText;
 
     private void Update()
     {
-        //coinText.text = "CURRENT COINS:" + currentCoins;
+        coinText.text = "COINS:" + gameManager.totalCoins;
     }
 
     public void Level1Button()
