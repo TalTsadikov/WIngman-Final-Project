@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class OptionsMenuManager : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
-    public const string VOLUME = "musicVolume";
+    public const string volume = "musicVolume";
 
     void Start()
     {
-        if (!PlayerPrefs.HasKey(VOLUME))
+        if (!PlayerPrefs.HasKey(volume))
         {
-            PlayerPrefs.SetFloat(VOLUME, 1);
+            PlayerPrefs.SetFloat(volume, 1);
             LoadVolume();
         }
 
@@ -25,13 +25,13 @@ public class OptionsMenuManager : MonoBehaviour
     public void changeVolume()
     {
         float volumeValue = volumeSlider.value;
-        PlayerPrefs.SetFloat(VOLUME, volumeValue);
+        PlayerPrefs.SetFloat(volume, volumeValue);
         LoadVolume();
     }
 
     private void LoadVolume()
     {
-        float volumeValue = PlayerPrefs.GetFloat(VOLUME);
+        float volumeValue = PlayerPrefs.GetFloat(volume);
         volumeSlider.value = volumeValue;
         AudioListener.volume = volumeValue;
     }
