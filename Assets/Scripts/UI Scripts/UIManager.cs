@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DG.Tweening;
 
 public class UIManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI coinAmountText;
     public TextMeshProUGUI checkpointAmountText;
     public TextMeshProUGUI checkpointTriggeredText;
+    public TextMeshProUGUI checkPointReachedText;
 
     // Start is called before the first frame update
     void Start()
@@ -30,4 +32,20 @@ public class UIManager : MonoBehaviour
         checkpointTriggeredText.text = cpManager.checkpointTriggered.ToString();
         checkpointAmountText.text = "/" + cpManager.checkpointAmount.ToString();
     }
+
+    public void CheckPointReachedTextEnable()
+    {
+        checkPointReachedText.DOFade(1, 1f);
+        checkPointReachedText.transform.DOScale(2, 1f);        
+    }
+
+    public void CheckPointReachedTextDisable()
+    {
+        checkPointReachedText.transform.DOScale(1, 1f);
+        checkPointReachedText.DOFade(0, 1f);
+    }
+
+
+
+
 }

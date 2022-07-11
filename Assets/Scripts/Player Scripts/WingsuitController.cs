@@ -7,6 +7,7 @@ public class WingsuitController : MonoBehaviour
 {
     [SerializeField] Canvas retryMenu;
     [SerializeField] RetryMenu retryMenuScript;
+    [SerializeField] ParticleSystem smokeTrail,smokeTrail2;
 
 
     public float boostSpeed = 20f;
@@ -58,13 +59,6 @@ public class WingsuitController : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            highSpeed = boostSpeed;
-        }
-        else
-            highSpeed = 13.8f;
-
         // Rotation
         // Y
         rot.y += 20 * Input.GetAxis("Mouse X") * Time.deltaTime * mouseSensetivity;
@@ -74,9 +68,22 @@ public class WingsuitController : MonoBehaviour
         rot.z = Mathf.Clamp(rot.z, -5, 5);
         // X
         rot.x += 20 * Input.GetAxis("Mouse Y") * Time.deltaTime * -mouseSensetivity;
+        
         // Limiting x-axis
-        rot.x = Mathf.Clamp(rot.x, minAngle, maxAngle);
+        if(!Input.GetKey(KeyCode.Space))
+        {
+            rot.x = Mathf.Clamp(rot.x, minAngle, maxAngle);
+            highSpeed = 40;
+            DisableSmokeTrail();
+        }
 
+        //dive mode
+        if (Input.GetKey(KeyCode.Space) && percentage > 0.9f)
+        {
+            rot.x = Mathf.Clamp(rot.x, 45, 65);
+            highSpeed = 60;
+            EnableSmokeTrail();
+        }
         
         // Update rotation
         transform.rotation = Quaternion.Euler(rot);
@@ -100,6 +107,7 @@ public class WingsuitController : MonoBehaviour
         // Change pitch value based on the player's angle and percentage
         am.SetFloat("Pitch", 1 + percentage);
 
+            
         if (powerUpActive)
         {
             rb.AddForce(transform.up * powerUpForce * Time.deltaTime);
@@ -134,4 +142,16 @@ public class WingsuitController : MonoBehaviour
         retryMenu.gameObject.SetActive(true);
     }
 
+    void EnableSmokeTrail()
+    {
+        smokeTrail.enableEmission = true;
+        smokeTrail2.enableEmission = true;
+
+    }
+
+    void DisableSmokeTrail()
+    {
+        smokeTrail.enableEmission = false;
+        smokeTrail2.enableEmission = false;
+    }
 }
