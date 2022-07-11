@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class WinMenu : MonoBehaviour
 {
     public const string MAIN_MENU = "Main Menu";
+    public const string LEVEL_SELECT = "Level Select Menu";
     int currentSceneIndex;
 
     private void Start()
@@ -13,9 +14,9 @@ public class WinMenu : MonoBehaviour
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
-    public void NextLevelButton()
+    public void LevelSelectButton()
     {
-        SceneManager.LoadScene(currentSceneIndex++);
+        SceneManager.LoadScene(LEVEL_SELECT);
         Time.timeScale = 1;
         DataPersistenceManager.instance.SaveGame();
     }
