@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI checkpointAmountText;
     public TextMeshProUGUI checkpointTriggeredText;
     public TextMeshProUGUI checkPointReachedText;
+    public TextMeshProUGUI coinsGatheredText;
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,13 +38,25 @@ public class UIManager : MonoBehaviour
     public void CheckPointReachedTextEnable()
     {
         checkPointReachedText.DOFade(1, 1f);
-        checkPointReachedText.transform.DOScale(2, 1f);        
+        checkPointReachedText.transform.DOScale(2, 1f);
     }
 
     public void CheckPointReachedTextDisable()
     {
         checkPointReachedText.transform.DOScale(1, 1f);
         checkPointReachedText.DOFade(0, 1f);
+    }
+
+    public void CoinGatheredTextPopUp()
+    {
+        coinsGatheredText.DOFade(1, 1f);
+        StartCoroutine(CoinGatheredTextPopUpDelay());
+    }
+
+    IEnumerator CoinGatheredTextPopUpDelay()
+    {
+        yield return new WaitForSeconds(0.3f);
+        coinsGatheredText.DOFade(0, 1f);
     }
 
 

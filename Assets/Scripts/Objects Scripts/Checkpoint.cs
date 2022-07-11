@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Checkpoint : MonoBehaviour
 {
     [SerializeField] CheckPointManager cpManager;
     [SerializeField] UIManager uiManager;
+    [SerializeField] TextMeshProUGUI checkpointReachedText;
 
     private void OnTriggerEnter(Collider other)
     {
