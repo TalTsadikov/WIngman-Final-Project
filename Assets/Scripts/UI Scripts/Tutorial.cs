@@ -15,10 +15,12 @@ public class Tutorial : MonoBehaviour
             tutorialScreen.SetActive(true);
             Time.timeScale = 0f;
             PlayerPrefs.SetInt("firstTime", 1);
+            Debug.Log("First");
         }
         else
         {
             tutorialScreen.SetActive(false);
+            Debug.Log("Not First");
         }
     }
 
