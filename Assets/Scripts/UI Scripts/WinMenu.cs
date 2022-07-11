@@ -6,12 +6,17 @@ using UnityEngine.SceneManagement;
 public class WinMenu : MonoBehaviour
 {
     public const string MAIN_MENU = "Main Menu";
+    public const string LEVEL_SELECT = "Level Select Menu";
     int currentSceneIndex;
 
-    public void NextLevelButton()
+    private void Start()
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex++);
+    }
+
+    public void LevelSelectButton()
+    {
+        SceneManager.LoadScene(LEVEL_SELECT);
         Time.timeScale = 1;
         DataPersistenceManager.instance.SaveGame();
     }
