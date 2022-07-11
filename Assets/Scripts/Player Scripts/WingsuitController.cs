@@ -73,7 +73,7 @@ public class WingsuitController : MonoBehaviour
         if(!Input.GetKey(KeyCode.Space))
         {
             rot.x = Mathf.Clamp(rot.x, minAngle, maxAngle);
-            highSpeed = 40;
+            highSpeed = 30;
             DisableSmokeTrail();
         }
 
