@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class Coin : MonoBehaviour//, IDataPersistence
 {
     [SerializeField] CoinManager coinManager;
+    [SerializeField] UIManager uiManager;
+    [SerializeField] TextMeshProUGUI coinGatheredText;
+
     private bool collected = false;
 
     private void OnTriggerEnter(Collider other)
@@ -19,7 +24,10 @@ public class Coin : MonoBehaviour//, IDataPersistence
     private void CoinCollected()
     {
         collected = true;
-        coinManager.coinsCollected++;
+        uiManager.CoinGatheredTextPopUp();
+        coinManager.coinsCollected++;        
         Destroy(this.gameObject);
     }
+
+
 }
