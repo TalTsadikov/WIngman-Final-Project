@@ -229,7 +229,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 177.528, z: 0}
 --- !u!1001 &22000984
 PrefabInstance:
@@ -250,6 +250,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (11)
@@ -339,6 +343,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (21)
@@ -460,6 +468,10 @@ PrefabInstance:
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 1895084472}
+    - target: {fileID: 9010210528424134428, guid: 2cb94b43cfeb5664e9b00efa67c6dea4, type: 3}
+      propertyPath: checkpointSound
+      value: 
+      objectReference: {fileID: 1663032225}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cb94b43cfeb5664e9b00efa67c6dea4, type: 3}
 --- !u!1 &49849918
@@ -577,9 +589,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1001454543}
     - target: {fileID: 3612505396359849527, guid: e7ea5d315173f2140bd410bbb5ece9c1, type: 3}
+      propertyPath: winSound
+      value: 
+      objectReference: {fileID: 1688811766}
+    - target: {fileID: 3612505396359849527, guid: e7ea5d315173f2140bd410bbb5ece9c1, type: 3}
       propertyPath: cpManager
       value: 
       objectReference: {fileID: 468533991}
+    - target: {fileID: 3612505396359849527, guid: e7ea5d315173f2140bd410bbb5ece9c1, type: 3}
+      propertyPath: loseSound
+      value: 
+      objectReference: {fileID: 1044183183}
     - target: {fileID: 3612505396359849527, guid: e7ea5d315173f2140bd410bbb5ece9c1, type: 3}
       propertyPath: checkpoint
       value: 
@@ -697,6 +717,10 @@ PrefabInstance:
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 1895084472}
+    - target: {fileID: 9010210528424134428, guid: 2cb94b43cfeb5664e9b00efa67c6dea4, type: 3}
+      propertyPath: checkpointSound
+      value: 
+      objectReference: {fileID: 1663032225}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cb94b43cfeb5664e9b00efa67c6dea4, type: 3}
 --- !u!1001 &164597564
@@ -718,6 +742,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (1)
@@ -812,6 +840,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (15)
@@ -1013,6 +1045,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin
@@ -1107,6 +1143,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (2)
@@ -1201,6 +1241,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!82 &370368941 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1524096038011392720, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+  m_PrefabInstance: {fileID: 1393575799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &384900721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,6 +1379,10 @@ PrefabInstance:
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 1895084472}
+    - target: {fileID: 9010210528424134428, guid: 2cb94b43cfeb5664e9b00efa67c6dea4, type: 3}
+      propertyPath: checkpointSound
+      value: 
+      objectReference: {fileID: 1663032225}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cb94b43cfeb5664e9b00efa67c6dea4, type: 3}
 --- !u!1 &408840795
@@ -1482,6 +1531,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (7)
@@ -1716,7 +1769,7 @@ PrefabInstance:
       objectReference: {fileID: 1889258269}
     - target: {fileID: 2986548886771233610, guid: 307f0a03e0542834ea7de3da61e2e897, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2986548886771233610, guid: 307f0a03e0542834ea7de3da61e2e897, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1798,6 +1851,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (14)
@@ -1892,6 +1949,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (9)
@@ -1991,6 +2052,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (12)
@@ -2090,6 +2155,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (19)
@@ -2179,6 +2248,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (3)
@@ -2379,7 +2452,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &939883009 stripped
 Transform:
@@ -2400,6 +2473,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4597369934722987724, guid: 22763799173f2da47a928cd76531b108, type: 3}
   m_PrefabInstance: {fileID: 1515767160}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1044183183 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1524096039911847781, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+  m_PrefabInstance: {fileID: 1393575799}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1048027408 stripped
 Transform:
@@ -2425,6 +2503,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (5)
@@ -2514,6 +2596,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (17)
@@ -2584,6 +2670,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+--- !u!82 &1142561846 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1524096038346786478, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+  m_PrefabInstance: {fileID: 1393575799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1163683589
 GameObject:
   m_ObjectHideFlags: 0
@@ -2746,6 +2837,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (20)
@@ -2831,6 +2926,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9138331281401913194, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
   m_PrefabInstance: {fileID: 1064327480}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1393575799
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1524096039302691297, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524096039302691297, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 445.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524096039302691297, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 603.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524096039302691297, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 183.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524096039302691297, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.97058624
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524096039302691297, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.24075381
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524096039302691297, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000000008350138
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524096039302691297, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000020712505
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524096039302691297, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 42.186
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524096039302691297, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524096039302691297, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524096039302691301, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+      propertyPath: m_Name
+      value: Main Camera (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
 --- !u!4 &1412596665 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9138331281401913194, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
@@ -2855,6 +3007,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (8)
@@ -3115,6 +3271,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (18)
@@ -3209,6 +3369,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (13)
@@ -3503,6 +3667,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 228bb35d6347e8344801a701ed3a89df, type: 3}
+--- !u!82 &1663032225 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1524096039897038113, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+  m_PrefabInstance: {fileID: 1393575799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1673529961
 GameObject:
   m_ObjectHideFlags: 0
@@ -3522,7 +3691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1673529962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3615,14 +3784,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673529961}
-  m_LocalRotation: {x: 0.24075381, y: 0.000000008357274, z: -0.000000002073021, w: 0.97058624}
+  m_LocalRotation: {x: 0.24075381, y: 0.00000000835014, z: -0.000000002071251, w: 0.97058624}
   m_LocalPosition: {x: 445.6, y: 603.38, z: 183.72}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 1592295330}
   - {fileID: 408840796}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 42.186, y: 0, z: 0}
 --- !u!114 &1673529966
 MonoBehaviour:
@@ -3657,6 +3826,11 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!82 &1688811766 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1524096039523544251, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+  m_PrefabInstance: {fileID: 1393575799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1734217320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3676,6 +3850,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (10)
@@ -3870,6 +4048,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (6)
@@ -4059,6 +4241,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (4)
@@ -4195,7 +4381,7 @@ Transform:
   - {fileID: 979861175}
   - {fileID: 1752721781}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1889258269
 MonoBehaviour:
@@ -4283,11 +4469,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 651271619, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000000835192
+      value: -0.000000008350138
       objectReference: {fileID: 0}
     - target: {fileID: 651271619, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000002071693
+      value: 0.0000000020712512
       objectReference: {fileID: 0}
     - target: {fileID: 691326526, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
       propertyPath: m_TagString
@@ -4319,11 +4505,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1150769145, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000007450322
+      value: -0.000000008346571
       objectReference: {fileID: 0}
     - target: {fileID: 1150769145, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000018480518
+      value: 0.000000002070366
       objectReference: {fileID: 0}
     - target: {fileID: 1223951572, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
       propertyPath: m_FollowOffset.y
@@ -4351,11 +4537,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1736752308, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000008357274
+      value: 0.000000008350138
       objectReference: {fileID: 0}
     - target: {fileID: 1736752308, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000020730213
+      value: -0.0000000020712512
       objectReference: {fileID: 0}
     - target: {fileID: 8989599934056025515, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
       propertyPath: Player
@@ -4429,6 +4615,10 @@ PrefabInstance:
       propertyPath: retryMenu
       value: 
       objectReference: {fileID: 781105653}
+    - target: {fileID: 8989599934507984895, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
+      propertyPath: crashSound
+      value: 
+      objectReference: {fileID: 370368941}
     - target: {fileID: 8989599934507984895, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
       propertyPath: powerUpForce
       value: 7000
@@ -4568,7 +4758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8539154545492457788, guid: edb3860ffdeecab49a0306468d287a02, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8539154545492457788, guid: edb3860ffdeecab49a0306468d287a02, type: 3}
       propertyPath: m_LocalScale.x
@@ -4653,6 +4843,10 @@ PrefabInstance:
       propertyPath: coinGatheredText
       value: 
       objectReference: {fileID: 1755924742}
+    - target: {fileID: 147615020, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
+      propertyPath: coinCollectedSound
+      value: 
+      objectReference: {fileID: 1142561846}
     - target: {fileID: 836192004847097874, guid: 74a3c3bfd7796214e986b936dd50af60, type: 3}
       propertyPath: m_Name
       value: coin (16)
@@ -4736,7 +4930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3470544948152122294, guid: 24f25d29b9b1fec4585109df4e0e3216, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3470544948152122294, guid: 24f25d29b9b1fec4585109df4e0e3216, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4833,7 +5027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7960994015621702590, guid: 810e6ac271e77664db5e2486407e7bd4, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7960994015621702590, guid: 810e6ac271e77664db5e2486407e7bd4, type: 3}
       propertyPath: m_AnchorMax.x
