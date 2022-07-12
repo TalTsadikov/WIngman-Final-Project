@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
+    [SerializeField] RectTransform pauseMenuRect;
     [HideInInspector] public static bool isPaused;
     public const string MAIN_MENU = "Main Menu";
 
@@ -35,12 +38,14 @@ public class PauseMenu : MonoBehaviour
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
+        pauseMenuRect.DOAnchorPos(Vector2.zero, 0.5f);
+        StartCoroutine(TimeFreezeActiveDelay());
         isPaused = true;
     }
 
     public void ResumeGame()
     {
+        pauseMenuRect.DOAnchorPos(new Vector2(0, 1000), 1f);
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
@@ -57,4 +62,12 @@ public class PauseMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    IEnumerator TimeFreezeActiveDelay()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Time.timeScale = 0f;
+    }
+
+ 
 }
