@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     [SerializeField] RectTransform pauseMenuRect;
+    [SerializeField] GameObject optionsMenu;
     [HideInInspector] public static bool isPaused;
     public const string MAIN_MENU = "Main Menu";
 
@@ -56,6 +57,11 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         DataPersistenceManager.instance.SaveGame();
         SceneManager.LoadScene(MAIN_MENU);
+    }
+
+    public void OptionsButton()
+    {
+        optionsMenu.SetActive(true);
     }
 
     public void QuitGame()
