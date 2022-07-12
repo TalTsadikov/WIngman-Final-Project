@@ -20,7 +20,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        coinAmountText.text = "/" + coinManager.coinsAmount.ToString();
+        coinAmountText.text = "   /" + coinManager.coinsAmount.ToString();
         coinsCollectedText.text = coinManager.coinsCollected.ToString();
         checkpointTriggeredText.text = cpManager.checkpointTriggered.ToString();
         checkpointAmountText.text = "/" + cpManager.checkpointAmount.ToString();
@@ -29,7 +29,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        coinAmountText.text = "/" + coinManager.coinsAmount.ToString();
+        coinAmountText.text = "   /" + coinManager.coinsAmount.ToString();
         coinsCollectedText.text = coinManager.coinsCollected.ToString();
         checkpointTriggeredText.text = cpManager.checkpointTriggered.ToString();
         checkpointAmountText.text = "/" + cpManager.checkpointAmount.ToString();
