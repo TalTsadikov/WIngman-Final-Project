@@ -12,13 +12,9 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public int level1Score;
     public int level2Score;
     public int level3Score;
-    public int level4Score;
-    public int level5Score;
     public int level1HighScore;
     public int level2HighScore;
     public int level3HighScore;
-    public int level4HighScore;
-    public int level5HighScore;
     public int totalCoins;
     public int buildIndex;
 
@@ -33,8 +29,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
         level1HighScore = data.level1HighScore;
         level2HighScore = data.level2HighScore;
         level3HighScore = data.level3HighScore;
-        level4HighScore = data.level4HighScore;
-        level5HighScore = data.level5HighScore;
         totalCoins = data.totalCoins;
     }
 
@@ -43,8 +37,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
         data.level1HighScore = level1HighScore;
         data.level2HighScore = level2HighScore;
         data.level3HighScore = level3HighScore;
-        data.level4HighScore = level4HighScore;
-        data.level5HighScore = level5HighScore;
         data.totalCoins = totalCoins;
     }
 
@@ -69,14 +61,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
             {
                 level3HighScore = level3Score;
             }
-            else if (buildIndex == 4)
-            {
-                level4HighScore = level4Score;
-            }
-            else if (buildIndex == 5)
-            {
-                level5HighScore = level5Score;
-            }
             
             SumUpTotalCoins();
 
@@ -86,6 +70,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     public void SumUpTotalCoins()
     {
-        totalCoins = level1HighScore + level2HighScore + level3HighScore + level4HighScore + level5HighScore;
+        totalCoins = level1HighScore + level2HighScore + level3HighScore;
     }
 }

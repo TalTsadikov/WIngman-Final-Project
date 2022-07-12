@@ -34,20 +34,6 @@ public class ScoreManager : MonoBehaviour
                     Debug.Log("3");
                 }
                 break;
-            case "level4HighScore":
-                if (coinsCollected > gameManager.level4HighScore)
-                {
-                    gameManager.level4Score = coinsCollected;
-                    Debug.Log("4");
-                }
-                break;
-            case "level5HighScore":
-                if (coinsCollected > gameManager.level5HighScore)
-                {
-                    gameManager.level5Score = coinsCollected;
-                    Debug.Log("5");
-                }
-                break;
             default:
                 break;
         }
@@ -65,12 +51,6 @@ public class ScoreManager : MonoBehaviour
                 break;
             case 3:
                 level = "level3HighScore";
-                break;
-            case 4:
-                level = "level4HighScore";
-                break;
-            case 5:
-                level = "level5HighScore";
                 break;
         }
 

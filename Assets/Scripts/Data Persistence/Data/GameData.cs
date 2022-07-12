@@ -9,8 +9,6 @@ public class GameData
     public int level1HighScore;
     public int level2HighScore;
     public int level3HighScore;
-    public int level4HighScore;
-    public int level5HighScore;
 
     public GameData()
     {
@@ -18,7 +16,5 @@ public class GameData
         level1HighScore = new int();
         level2HighScore = new int();
         level3HighScore = new int();
-        level4HighScore = new int();
-        level5HighScore = new int();
     }
 }
