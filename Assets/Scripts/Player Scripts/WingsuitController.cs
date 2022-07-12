@@ -50,6 +50,8 @@ public class WingsuitController : MonoBehaviour
 
     [SerializeField] AnimationController animController;
 
+    bool diveMode = false;
+
     private void Start()
     {
         // Setting rotation variable to the current angles
@@ -68,17 +70,23 @@ public class WingsuitController : MonoBehaviour
         // X
         rot.x += 20 * Input.GetAxis("Mouse Y") * Time.deltaTime * -mouseSensetivity;
         
+        if(!diveMode)
+        {
          rot.x = Mathf.Clamp(rot.x, minAngle, maxAngle);
          highSpeed = 30;
          DisableSmokeTrail();
+        }
 
         //dive mode
         if (Input.GetKey(KeyCode.Space) && percentage > 0.9f)
         {
+            diveMode = true;
             rot.x = Mathf.Clamp(rot.x, 45, 65);
             highSpeed = 60;
             EnableSmokeTrail();
         }
+        else
+            diveMode = false;
         
         // Update rotation
         transform.rotation = Quaternion.Euler(rot);
