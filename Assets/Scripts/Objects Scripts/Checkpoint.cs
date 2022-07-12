@@ -8,6 +8,7 @@ public class Checkpoint : MonoBehaviour
     [SerializeField] CheckPointManager cpManager;
     [SerializeField] UIManager uiManager;
     [SerializeField] TextMeshProUGUI checkpointReachedText;
+    [SerializeField] AudioSource checkpointSound;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,6 +16,7 @@ public class Checkpoint : MonoBehaviour
         {
             cpManager.checkpointTriggered++;
             Debug.Log("checkpoint");
+            checkpointSound.Play();
             uiManager.CheckPointReachedTextEnable();
             StartCoroutine(CPTextDisableTimer());
         }

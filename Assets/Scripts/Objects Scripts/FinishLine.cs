@@ -7,6 +7,8 @@ public class FinishLine : MonoBehaviour
     [SerializeField] CheckPointManager cpManager;
     [SerializeField] WingsuitController wsCon;
     [SerializeField] GameObject winMenu;
+    [SerializeField] AudioSource winSound;
+    [SerializeField] AudioSource loseSound;
 
     public bool finishedLevel = false;
 
@@ -15,11 +17,13 @@ public class FinishLine : MonoBehaviour
         if (cpManager.checkpointTriggered == cpManager.checkpointAmount)
         {
             finishedLevel = true;
+            winSound.Play();
             SetWinMenuActive();
         }
         else
         {
             finishedLevel = false;
+            loseSound.Play();
             wsCon.SetRetryMenuActive();
         }
     }
