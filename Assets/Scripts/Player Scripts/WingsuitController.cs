@@ -47,6 +47,7 @@ public class WingsuitController : MonoBehaviour
 
     public bool powerUpActive = false;
     public float powerUpForce = 50f;
+    [SerializeField] AudioSource crashSound;
 
     [SerializeField] AnimationController animController;
 
@@ -135,6 +136,7 @@ public class WingsuitController : MonoBehaviour
     private void OnCollisionEnter(Collision coll)
     {
         animController.anim.SetBool("Player Crashed", true);
+        crashSound.Play();
         Invoke("SetRetryMenuActive", 1f);
     }
 
