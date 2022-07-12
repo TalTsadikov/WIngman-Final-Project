@@ -54,7 +54,7 @@ public class LevelSelectMenu : MonoBehaviour
 
     public void Level3Button()
     {
-
+        SceneManager.LoadScene(3);
     }
 
     public void MainMenuButton()
