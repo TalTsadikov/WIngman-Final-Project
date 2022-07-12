@@ -4346,6 +4346,10 @@ PrefabInstance:
       value: Updated Player
       objectReference: {fileID: 0}
     - target: {fileID: 8989599934507984895, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
+      propertyPath: highSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8989599934507984895, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
       propertyPath: retryMenu
       value: 
       objectReference: {fileID: 781105653}

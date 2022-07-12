@@ -9,7 +9,6 @@ public class WingsuitController : MonoBehaviour
     [SerializeField] RetryMenu retryMenuScript;
     [SerializeField] ParticleSystem smokeTrail,smokeTrail2;
 
-
     public float boostSpeed = 20f;
 
     // Get the player Rigidbody component
@@ -69,13 +68,9 @@ public class WingsuitController : MonoBehaviour
         // X
         rot.x += 20 * Input.GetAxis("Mouse Y") * Time.deltaTime * -mouseSensetivity;
         
-        // Limiting x-axis
-        if(!Input.GetKey(KeyCode.Space))
-        {
-            rot.x = Mathf.Clamp(rot.x, minAngle, maxAngle);
-            highSpeed = 30;
-            DisableSmokeTrail();
-        }
+         rot.x = Mathf.Clamp(rot.x, minAngle, maxAngle);
+         highSpeed = 30;
+         DisableSmokeTrail();
 
         //dive mode
         if (Input.GetKey(KeyCode.Space) && percentage > 0.9f)
@@ -107,7 +102,6 @@ public class WingsuitController : MonoBehaviour
         // Change pitch value based on the player's angle and percentage
         am.SetFloat("Pitch", 1 + percentage);
 
-            
         if (powerUpActive)
         {
             rb.AddForce(transform.up * powerUpForce * Time.deltaTime);
@@ -146,7 +140,6 @@ public class WingsuitController : MonoBehaviour
     {
         smokeTrail.enableEmission = true;
         smokeTrail2.enableEmission = true;
-
     }
 
     void DisableSmokeTrail()
