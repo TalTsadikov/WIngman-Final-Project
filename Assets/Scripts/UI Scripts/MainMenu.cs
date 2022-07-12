@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
             DataPersistenceManager.instance.NewGame();
         }
 
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("Level Select Menu");
     }
 
     public void QuitGame()
