@@ -13,7 +13,6 @@ public class MainMenu : MonoBehaviour
         {
             DataPersistenceManager.instance.NewGame();
         }
-
         SceneManager.LoadScene("Level Select Menu");
     }
 
