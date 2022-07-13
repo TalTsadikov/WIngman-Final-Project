@@ -111,6 +111,9 @@ public class WingsuitController : MonoBehaviour
         // Change pitch value based on the player's angle and percentage
         am.SetFloat("Pitch", 1 + percentage);
 
+        if (diveMode)
+            am.SetFloat("Pitch", 2 + percentage);
+
         if (powerUpActive)
         {
             rb.AddForce(transform.up * powerUpForce * Time.deltaTime);
