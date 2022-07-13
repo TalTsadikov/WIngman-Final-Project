@@ -9,10 +9,11 @@ public class Checkpoint : MonoBehaviour
     [SerializeField] UIManager uiManager;
     [SerializeField] TextMeshProUGUI checkpointReachedText;
     [SerializeField] AudioSource checkpointSound;
+    public const string PLAYER = "Player";
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == PLAYER)
         {
             cpManager.checkpointTriggered++;
             Debug.Log("checkpoint");

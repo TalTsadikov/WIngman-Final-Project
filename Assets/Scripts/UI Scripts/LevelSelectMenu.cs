@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class LevelSelectMenu : MonoBehaviour
 {
     public const string MAIN_MENU = "Main Menu";
+    public const string COINS = "COINS:";
 
     [SerializeField] GameManager gameManager;
     [SerializeField] TextMeshProUGUI coinText;
@@ -27,7 +28,7 @@ public class LevelSelectMenu : MonoBehaviour
 
     private void Update()
     {
-        coinText.text = "COINS:" + gameManager.totalCoins;
+        coinText.text = COINS + gameManager.totalCoins;
 
         if(gameManager.totalCoins >= 18)
         {

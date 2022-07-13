@@ -61,22 +61,17 @@ MonoBehaviour:
   finishLine: {fileID: 0}
   coinManager: {fileID: 0}
   scoreManager: {fileID: 2986548886771233613}
+  tutorialMenu: {fileID: 0}
   data:
-    coinsCollected: 0
+    totalCoins: 0
     level1HighScore: 0
     level2HighScore: 0
     level3HighScore: 0
-    level4HighScore: 0
-    level5HighScore: 0
   level1Score: 0
   level2Score: 0
   level3Score: 0
-  level4Score: 0
-  level5Score: 0
   level1HighScore: 0
   level2HighScore: 0
   level3HighScore: 0
-  level4HighScore: 0
-  level5HighScore: 0
+  totalCoins: 0
   buildIndex: 0
-  levelHighScore: 0

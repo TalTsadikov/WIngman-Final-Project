@@ -48,6 +48,7 @@ public class WingsuitController : MonoBehaviour
     public bool powerUpActive = false;
     public float powerUpForce = 50f;
     [SerializeField] AudioSource crashSound;
+    [SerializeField] AudioSource powerUpSound;
 
     [SerializeField] AnimationController animController;
 
@@ -124,6 +125,7 @@ public class WingsuitController : MonoBehaviour
     {
         if (other.tag == "PowerUp")
         {
+            powerUpSound.Play();
             StartCoroutine(PowerUpCooldown());
             Debug.Log("Power up");
         }
