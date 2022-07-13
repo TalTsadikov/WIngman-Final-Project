@@ -11,11 +11,13 @@ public class Coin : MonoBehaviour//, IDataPersistence
     [SerializeField] TextMeshProUGUI coinGatheredText;
     [SerializeField] AudioSource coinCollectedSound;
 
+    public const string PLAYER = "Player";
+
     private bool collected = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!collected && other.tag == "Player")
+        if (!collected && other.tag == PLAYER)
         {
             CoinCollected();
             Debug.Log("Collected");

@@ -2621,6 +2621,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+--- !u!82 &1063971280 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2309496609462658875, guid: 2ee8777be9975924889bc9fec487168b, type: 3}
+  m_PrefabInstance: {fileID: 1063971279}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1076622402 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8539154545492457788, guid: edb3860ffdeecab49a0306468d287a02, type: 3}
@@ -4269,7 +4274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1150769145, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000002592802
+      value: -0.000002577901
       objectReference: {fileID: 0}
     - target: {fileID: 1150769145, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
       propertyPath: m_LocalRotation.z
@@ -4351,6 +4356,10 @@ PrefabInstance:
       propertyPath: crashSound
       value: 
       objectReference: {fileID: 795483043}
+    - target: {fileID: 8989599934507984895, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
+      propertyPath: powerUpSound
+      value: 
+      objectReference: {fileID: 1063971280}
     - target: {fileID: 8989599934507984895, guid: 7ae138e8d795e42439a118a538af72ec, type: 3}
       propertyPath: retryMenuScript
       value: 

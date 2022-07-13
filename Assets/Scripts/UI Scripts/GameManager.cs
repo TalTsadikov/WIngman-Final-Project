@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     [SerializeField] FinishLine finishLine;
     [SerializeField] CoinManager coinManager;
     [SerializeField] ScoreManager scoreManager;
+    [SerializeField] GameObject tutorialMenu;
     public GameData data;
     public int level1Score;
     public int level2Score;
@@ -66,6 +67,13 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
             finishLine.finishedLevel = false;
         }
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            tutorialMenu.SetActive(true);
+            Time.timeScale = 0;
+        }
+
     }
 
     public void SumUpTotalCoins()
